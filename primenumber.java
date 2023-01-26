@@ -8,6 +8,7 @@ class PrimeNumber
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please Check the Number whether prime or no " + "\n" + "Please don't try to test me if you are good at math");
+        System.out.println("PLease ENter The NUmber");
         int inputnumber = sc.nextInt();
         int count = 0;
         if(inputnumber ==1)
@@ -22,7 +23,7 @@ class PrimeNumber
        
         for(int i=2; i<=inputnumber; i++)
         {
-            if(inputnumber%2==0)
+            if(inputnumber%i==0)
               count++;
         }
        
